@@ -1,0 +1,65 @@
+# Robots.txt for Harvest Market & Café
+# This file tells search engine crawlers which pages to index
+
+User-agent: *
+Allow: /
+
+# Sitemap location - CRITICAL for SEO
+Sitemap: https://harvestmarketcafe.com/sitemap.xml
+
+# Disallow admin/private areas (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Disallow duplicate content (if using URL parameters)
+Disallow: /*?
+Disallow: /*&
+
+# Allow specific important files
+Allow: /styles.css
+Allow: /script.js
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Crawl delay (optional - prevents server overload)
+# Crawl-delay: 10
+
+# Specific directives for major search engines
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Bad bots (block scrapers)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 30
+
+# Note: Make sure to replace harvestmarketcafe.com with your actual domain
