@@ -101,8 +101,8 @@
 <body>
     <header class="header" id="header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">🌾</div>
+            <a href="index.html" class="logo" aria-label="Harvest Market & Café Home">
+                <div class="logo-icon" aria-hidden="true">🌾</div>
                 <span>Harvest Market</span>
             </a>
             <ul class="nav-menu">
@@ -117,8 +117,26 @@
         </nav>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Contact</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
     <main id="main-content">
-        <section class="page-hero" style="margin-top: 90px; padding: 80px 40px; background: linear-gradient(135deg, var(--soft-beige), var(--warm-cream)); text-align: center;">
+        <section class="page-hero" style="padding: 80px 40px; background: linear-gradient(135deg, var(--soft-beige), var(--warm-cream)); text-align: center;">
             <div style="max-width: 800px; margin: 0 auto;">
                 <p class="section-tag">Get In Touch</p>
                 <h1 style="font-size: 56px; margin-bottom: 20px;">We'd Love to Hear From You</h1>
@@ -156,11 +174,11 @@
                             </div>
                             <div class="info-row">
                                 <span class="info-label">Email:</span>
-                                <span class="info-value"><a href="mailto:hello@harvestmarketcafe.com">hello@harvestmarketcafe.com</a></span>
+                                <span class="info-value"><a href="/cdn-cgi/l/email-protection#d4bcb1b8b8bb94bcb5a6a2b1a7a0b9b5a6bfb1a0b7b5b2b1fab7bbb9"><span class="__cf_email__" data-cfemail="0d65686161624d656c7f7b687e79606c7f6668796e6c6b68236e6260">[email&#160;protected]</span></a></span>
                             </div>
                             <div class="info-row">
                                 <span class="info-label">Wholesale:</span>
-                                <span class="info-value"><a href="mailto:wholesale@harvestmarketcafe.com">wholesale@harvestmarketcafe.com</a></span>
+                                <span class="info-value"><a href="/cdn-cgi/l/email-protection#13647b7c7f7660727f76537b7261657660677e7261787667707275763d707c7e"><span class="__cf_email__" data-cfemail="26514e494a4355474a43664e4754504355524b47544d4352454740430845494b">[email&#160;protected]</span></a></span>
                             </div>
                         </div>
                     </div>
@@ -252,7 +270,7 @@
                         </div>
                         <div class="footer-contact-item">
                             <span>✉️</span>
-                            <a href="mailto:hello@harvestmarketcafe.com">hello@harvestmarketcafe.com</a>
+                            <a href="/cdn-cgi/l/email-protection#432b262f2f2c032b2231352630372e2231282637202225266d202c2e"><span class="__cf_email__" data-cfemail="a4ccc1c8c8cbe4ccc5d6d2c1d7d0c9c5d6cfc1d0c7c5c2c18ac7cbc9">[email&#160;protected]</span></a>
                         </div>
                     </address>
                 </div>
@@ -280,19 +298,4 @@
                         <li><strong>Monday - Friday:</strong> 7am - 8pm</li>
                         <li><strong>Saturday - Sunday:</strong> 8am - 8pm</li>
                         <li style="margin-top: 12px;"><strong>Café Hours:</strong> Same as store</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div>&copy; 2026 Harvest Market & Café. All rights reserved.</div>
-                <div>
-                    <a href="privacy.html">Privacy Policy</a> | 
-                    <a href="terms.html">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+      
